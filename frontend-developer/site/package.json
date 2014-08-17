@@ -1,0 +1,32 @@
+{
+  "name": "work-at-wedemand",
+  "version": "0.0.0",
+  "description": "Apply for wedemand.",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "frontend",
+    "test",
+    "wedemand",
+    "js",
+    "sass",
+    "gulp"
+  ],
+  "author": "Willian Justen <willianjustenqui@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "minimist": "^1.1.0",
+    "gulp-if": "^1.2.4",
+    "gulp-cssmin": "^0.1.6",
+    "gulp-concat": "^2.3.4",
+    "gulp-compass": "^1.3.0",
+    "gulp-uglify": "^0.3.1",
+    "gulp-htmlmin": "^0.1.3",
+    "gulp-connect": "^2.0.6",
+    "gulp-imagemin": "^1.0.0",
+    "connect-modrewrite": "^0.7.7"
+  }
+}
