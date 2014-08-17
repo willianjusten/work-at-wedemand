@@ -27,7 +27,7 @@ gulp.task('html', function(){
 
 // Call Uglify and Concat JS
 gulp.task('js', function(){
-	return gulp.src('src/js/**/*.js')
+	return gulp.src('src/js/*.js')
 		.pipe(concat('main.js'))
 		.pipe(gulpif(env.p, uglify()))
 		.pipe(gulp.dest('build/js/'))
