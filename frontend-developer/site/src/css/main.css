@@ -4647,13 +4647,28 @@ body {
 }
 
 /* line 9, ../sass/_globals.scss */
+.black {
+  color: black;
+}
+
+/* line 13, ../sass/_globals.scss */
 .bold {
   font-weight: 700;
 }
 
-/* line 13, ../sass/_globals.scss */
+/* line 17, ../sass/_globals.scss */
 .light {
   font-weight: 400;
+}
+
+/* line 21, ../sass/_globals.scss */
+.super {
+  vertical-align: super;
+}
+
+/* line 25, ../sass/_globals.scss */
+.img-max {
+  width: 100%;
 }
 
 /* line 50, icons/*.png */

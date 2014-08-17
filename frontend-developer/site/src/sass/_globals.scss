@@ -6,10 +6,22 @@ body {
 	color: $pink-light;
 }
 
+.black {
+	color: black;
+}
+
 .bold {
 	font-weight: 700;
 }
 
 .light {
 	font-weight: 400;
+}
+
+.super {
+	vertical-align: super;
+}
+
+.img-max {
+	width: 100%;
 }
