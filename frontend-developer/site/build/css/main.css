@@ -4442,8 +4442,26 @@ tbody.collapse.in {
   color: dimgrey;
   margin-top: 0;
 }
+@media (max-width: 1200px) {
+  /* line 2, ../sass/_typo.scss */
+  .call h1 {
+    font-size: 31px;
+  }
+}
+@media (max-width: 992px) {
+  /* line 2, ../sass/_typo.scss */
+  .call h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 2, ../sass/_typo.scss */
+  .call h1 {
+    font-size: 23px;
+  }
+}
 
-/* line 8, ../sass/_typo.scss */
+/* line 20, ../sass/_typo.scss */
 .text-default {
   color: #959595;
   font-size: 14px;
@@ -4849,4 +4867,16 @@ body {
   color: #780e3f;
   line-height: 40px;
   padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  /* line 66, ../sass/_countdown.scss */
+  .countdown .numbers {
+    font-size: 24px;
+    width: 50px;
+  }
+  /* line 71, ../sass/_countdown.scss */
+  .countdown .divisor-timer {
+    padding: 0 3px;
+  }
 }

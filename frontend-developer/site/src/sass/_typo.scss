@@ -3,6 +3,18 @@
 		font-size: 34px;
 		color: $gray-dark;
 		margin-top: 0;
+
+		@media(max-width: $screen-lg){
+			font-size: 31px;
+		}
+
+		@media(max-width: $screen-md){
+			font-size: 28px;
+		}
+
+		@media(max-width: $screen-xs){
+			font-size: 23px;
+		}
 	}
 }
 .text-default {
