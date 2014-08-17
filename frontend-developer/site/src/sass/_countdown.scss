@@ -49,6 +49,10 @@
 		font-size: 12px;
 		margin: 5px 0;
 		font-weight: 700;
+
+		@media(max-width: $screen-sm){
+			display: none;
+		}
 	}
 
 	.divisor-timer {
@@ -64,8 +68,12 @@
 
 	.countdown{
 		.numbers {
-			font-size: 24px;
-			width: 50px;
+			font-size: 18px;
+			width: 35px;
+
+			p {
+				letter-spacing: 5px;
+			}
 		}
 
 		.divisor-timer {

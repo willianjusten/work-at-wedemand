@@ -4457,7 +4457,7 @@ tbody.collapse.in {
 @media (max-width: 480px) {
   /* line 2, ../sass/_typo.scss */
   .call h1 {
-    font-size: 23px;
+    font-size: 19px;
   }
 }
 
@@ -4573,8 +4573,8 @@ tbody.collapse.in {
 @media (max-width: 768px) {
   /* line 77, ../sass/_menu.scss */
   .search .form-group {
-    margin: 20px auto;
-    width: 300px;
+    margin: 15px auto;
+    width: 285px;
   }
 }
 /* line 90, ../sass/_menu.scss */
@@ -4652,7 +4652,7 @@ tbody.collapse.in {
   /* line 142, ../sass/_menu.scss */
   .login li {
     padding: 0;
-    margin: 0 5px 0 0;
+    margin: 0 10px 0 0;
     height: 54px;
     line-height: 54px;
   }
@@ -4707,10 +4707,22 @@ body {
 .spacer-30 {
   margin-top: 30px;
 }
+@media (max-width: 992px) {
+  /* line 30, ../sass/_globals.scss */
+  .spacer-30 {
+    margin-top: 15px;
+  }
+}
 
 /* line 30, ../sass/_globals.scss */
 .spacer-70 {
   margin-top: 70px;
+}
+@media (max-width: 992px) {
+  /* line 30, ../sass/_globals.scss */
+  .spacer-70 {
+    margin-top: 35px;
+  }
 }
 
 /* line 50, icons/*.png */
@@ -4860,7 +4872,13 @@ body {
   margin: 5px 0;
   font-weight: 700;
 }
-/* line 54, ../sass/_countdown.scss */
+@media (max-width: 768px) {
+  /* line 48, ../sass/_countdown.scss */
+  .countdown .label {
+    display: none;
+  }
+}
+/* line 58, ../sass/_countdown.scss */
 .countdown .divisor-timer {
   font-size: 60px;
   font-weight: 700;
@@ -4870,12 +4888,16 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* line 66, ../sass/_countdown.scss */
+  /* line 70, ../sass/_countdown.scss */
   .countdown .numbers {
-    font-size: 24px;
-    width: 50px;
+    font-size: 18px;
+    width: 35px;
   }
-  /* line 71, ../sass/_countdown.scss */
+  /* line 74, ../sass/_countdown.scss */
+  .countdown .numbers p {
+    letter-spacing: 5px;
+  }
+  /* line 79, ../sass/_countdown.scss */
   .countdown .divisor-timer {
     padding: 0 3px;
   }

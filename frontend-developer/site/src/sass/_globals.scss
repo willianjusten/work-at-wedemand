@@ -29,5 +29,9 @@ body {
 @each $i in 3, 7 {
 	.spacer-#{$i*10} {
 		margin-top: 10px * $i;
+
+		@media(max-width: $screen-md){
+			margin-top: 5px *$i;
+		}
 	}
 }
