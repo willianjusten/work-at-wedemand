@@ -4438,7 +4438,7 @@ tbody.collapse.in {
 }
 /* line 2, ../sass/_typo.scss */
 .call h1 {
-  font-size: 34px;
+  font-size: 30px;
   color: dimgrey;
   margin-top: 0;
 }
@@ -4673,53 +4673,59 @@ body {
   font-family: "futura-pt", "Open Sans", "Arial Bold",Gadget,sans-serif;
 }
 
-/* line 5, ../sass/_globals.scss */
+@media (min-width: 1200px) {
+  /* line 6, ../sass/_globals.scss */
+  .container {
+    width: 970px;
+  }
+}
+/* line 11, ../sass/_globals.scss */
 .pink {
   color: #d40064;
 }
 
-/* line 9, ../sass/_globals.scss */
+/* line 15, ../sass/_globals.scss */
 .black {
   color: black;
 }
 
-/* line 13, ../sass/_globals.scss */
+/* line 19, ../sass/_globals.scss */
 .bold {
   font-weight: 700;
 }
 
-/* line 17, ../sass/_globals.scss */
+/* line 23, ../sass/_globals.scss */
 .light {
   font-weight: 300;
 }
 
-/* line 21, ../sass/_globals.scss */
+/* line 27, ../sass/_globals.scss */
 .super {
   vertical-align: super;
 }
 
-/* line 25, ../sass/_globals.scss */
+/* line 31, ../sass/_globals.scss */
 .img-max {
   width: 100%;
 }
 
-/* line 30, ../sass/_globals.scss */
+/* line 36, ../sass/_globals.scss */
 .spacer-30 {
   margin-top: 30px;
 }
 @media (max-width: 992px) {
-  /* line 30, ../sass/_globals.scss */
+  /* line 36, ../sass/_globals.scss */
   .spacer-30 {
     margin-top: 15px;
   }
 }
 
-/* line 30, ../sass/_globals.scss */
+/* line 36, ../sass/_globals.scss */
 .spacer-70 {
   margin-top: 70px;
 }
 @media (max-width: 992px) {
-  /* line 30, ../sass/_globals.scss */
+  /* line 36, ../sass/_globals.scss */
   .spacer-70 {
     margin-top: 35px;
   }
@@ -4815,7 +4821,7 @@ body {
   }
 }
 
-/* line 3, ../sass/_countdown.scss */
+/* line 1, ../sass/_countdown.scss */
 .pink-gradient {
   background: #d40064;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d40064), color-stop(100%, #ae0052));
@@ -4826,29 +4832,27 @@ body {
   color: white;
 }
 
-/* line 9, ../sass/_countdown.scss */
+/* line 7, ../sass/_countdown.scss */
 .countdown {
   padding: 10px 30px 25px;
-  display: table;
-  width: 100%;
   box-shadow: -2px 4px 20px #bcbcbc;
 }
-/* line 15, ../sass/_countdown.scss */
+/* line 11, ../sass/_countdown.scss */
 .countdown h2 {
   margin: 0 auto 15px;
   font-size: 25px;
 }
-/* line 20, ../sass/_countdown.scss */
+/* line 16, ../sass/_countdown.scss */
 .countdown .days, .countdown .hours, .countdown .minutes, .countdown .seconds, .countdown .divisor-timer {
   float: left;
 }
-/* line 24, ../sass/_countdown.scss */
+/* line 20, ../sass/_countdown.scss */
 .countdown .timer {
   display: table;
   margin: 0 auto;
   text-align: center;
 }
-/* line 30, ../sass/_countdown.scss */
+/* line 26, ../sass/_countdown.scss */
 .countdown .numbers {
   font-size: 30px;
   font-weight: 700;
@@ -4859,26 +4863,26 @@ body {
   text-align: center;
   display: table;
 }
-/* line 40, ../sass/_countdown.scss */
+/* line 36, ../sass/_countdown.scss */
 .countdown .numbers p {
   display: table-cell;
   vertical-align: middle;
   letter-spacing: 8px;
   padding-left: 7px;
 }
-/* line 48, ../sass/_countdown.scss */
+/* line 44, ../sass/_countdown.scss */
 .countdown .label {
-  font-size: 12px;
+  font-size: 10px;
   margin: 5px 0;
   font-weight: 700;
 }
 @media (max-width: 768px) {
-  /* line 48, ../sass/_countdown.scss */
+  /* line 44, ../sass/_countdown.scss */
   .countdown .label {
     display: none;
   }
 }
-/* line 58, ../sass/_countdown.scss */
+/* line 54, ../sass/_countdown.scss */
 .countdown .divisor-timer {
   font-size: 60px;
   font-weight: 700;
@@ -4888,17 +4892,77 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* line 70, ../sass/_countdown.scss */
+  /* line 66, ../sass/_countdown.scss */
   .countdown .numbers {
     font-size: 18px;
     width: 35px;
   }
-  /* line 74, ../sass/_countdown.scss */
+  /* line 70, ../sass/_countdown.scss */
   .countdown .numbers p {
     letter-spacing: 5px;
   }
-  /* line 79, ../sass/_countdown.scss */
+  /* line 75, ../sass/_countdown.scss */
   .countdown .divisor-timer {
     padding: 0 3px;
   }
+}
+/* line 1, ../sass/_rankings.scss */
+.gray-gradient {
+  background-image: -webkit-linear-gradient(45deg, #dedede, #f9f9f9);
+  background-image: -moz-linear-gradient(45deg, #dedede, #f9f9f9);
+  background-image: -o-linear-gradient(45deg, #dedede, #f9f9f9);
+  background-image: linear-gradient(45deg, #dedede, #f9f9f9);
+  padding: 0 25px;
+  height: 200px;
+}
+
+/* line 9, ../sass/_rankings.scss */
+.rankings h1 {
+  font-size: 25px;
+  margin: 15px 0;
+}
+/* line 14, ../sass/_rankings.scss */
+.rankings .ranking-call {
+  height: 200px;
+}
+/* line 18, ../sass/_rankings.scss */
+.rankings .btn {
+  position: absolute;
+  bottom: 25px;
+}
+
+/* line 24, ../sass/_rankings.scss */
+.box-inset {
+  box-shadow: inset 0px 1px 20px 0px #E2E2E2;
+  height: 200px;
+  background: #F6F6F6;
+  padding: 25px 40px;
+}
+
+/* line 31, ../sass/_rankings.scss */
+.portrait-large, .portrait-medium {
+  float: left;
+}
+/* line 34, ../sass/_rankings.scss */
+.portrait-large img, .portrait-medium img {
+  float: left;
+}
+
+/* line 39, ../sass/_rankings.scss */
+.portrait-large {
+  position: relative;
+  color: white;
+}
+/* line 43, ../sass/_rankings.scss */
+.portrait-large .ribbon, .portrait-large .points {
+  position: absolute;
+}
+/* line 47, ../sass/_rankings.scss */
+.portrait-large .ribbon {
+  left: 0;
+  background: #d40064;
+}
+/* line 52, ../sass/_rankings.scss */
+.portrait-large .points {
+  right: 10px;
 }

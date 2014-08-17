@@ -1,0 +1,55 @@
+.gray-gradient {
+	$svg-gradient-shim-threshold: 1;
+  	@include background-image(linear-gradient(45deg, #DEDEDE, #F9F9F9 ));
+  	padding: 0 25px;
+  	height: 200px;
+}
+
+.rankings {
+	h1 {
+		font-size: 25px;
+		margin: 15px 0;
+	}
+
+	.ranking-call {
+		height: 200px;
+	}
+
+	.btn {
+		position: absolute;
+		bottom: 25px;
+	}
+}
+
+.box-inset {
+	box-shadow: inset 0px 1px 20px 0px #E2E2E2;
+	height: 200px;
+	background: #F6F6F6;
+	padding: 25px 40px;
+}
+
+.portrait-large, .portrait-medium {
+	float: left;
+
+	img {
+		float: left;
+	}
+}
+
+.portrait-large {
+	position: relative;
+	color: white;
+
+	.ribbon, .points {
+		position: absolute;
+	}
+
+	.ribbon {
+		left: 0;
+		background: $pink-light;
+	}
+
+	.points {
+		right: 10px;
+	}
+}

@@ -2,6 +2,12 @@ body {
 	font-family: "futura-pt", "Open Sans", "Arial Bold",Gadget,sans-serif;
 }
 
+@media(min-width: $screen-lg){
+	.container {
+		width: 970px;
+	}
+}
+
 .pink {
 	color: $pink-light;
 }
