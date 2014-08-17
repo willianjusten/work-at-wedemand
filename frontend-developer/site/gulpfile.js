@@ -4,6 +4,7 @@
 // Call Plugins
 var env        = require('minimist')(process.argv.slice(2)),
 	gulp       = require('gulp'),
+	gutil      = require('gulp-util'),
 	htmlmin    = require('gulp-htmlmin'),
 	uglify     = require('gulp-uglify'),
 	compass    = require('gulp-compass'),
@@ -43,6 +44,7 @@ gulp.task('compass', function(){
 			image: 'src/images'
 
 		}))
+		.on('error', gutil.log)
 		.pipe(gulpif(env.p, cssmin()))
 		.pipe(gulp.dest('build/css/'))
 		.pipe(connect.reload());

@@ -1,0 +1,33 @@
+.btn-gray {
+	background: $gray-search;
+}
+
+.btn-pink {
+	background: $pink-light;
+	color: white;
+}
+
+.btn-circle {
+	background: $pink-light;
+	font-weight: 700;
+	color: white;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	padding: 0;
+
+	&:hover {
+		color: white;
+		text-decoration: underline;
+	}
+
+	@media(max-width: $screen-sm){
+		background: white;
+		color: $pink-light;
+
+		&:hover {
+			color: $pink-light;
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,0 +1,13 @@
+@import "compass/utilities/sprites";
+@import "icons/*.png";
+@include all-icons-sprites;
+
+.icon {
+	background-repeat: none;
+	display: inline-block;
+}
+
+.icons-search {
+	width: 23px;
+	height: 18px;
+}
