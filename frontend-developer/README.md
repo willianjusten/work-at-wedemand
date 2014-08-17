@@ -13,7 +13,6 @@ Requirements
 
     * The counter on "next monthly winner in" must be fully functional.
     * The page must work on Safari, Chrome and Firefox. IE is a bonus. :)
-    * Progressive enhancement and graceful degradation are fine.
 
 What we're gonna evaluate
 -------------------------
@@ -31,6 +30,7 @@ Specifically:
     * Readability of your commit messages
     * The page doesn't need to be implemented "pixel perfect", although
       try to do it matching the layout as close as possible.
+    * Progressive enhancement and graceful degradation are fine.
 
 Extra points:
 
