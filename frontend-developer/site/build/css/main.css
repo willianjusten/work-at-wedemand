@@ -4436,6 +4436,20 @@ tbody.collapse.in {
     display: none !important;
   }
 }
+/* line 2, ../sass/_typo.scss */
+.call h1 {
+  font-size: 34px;
+  color: dimgrey;
+  margin-top: 0;
+}
+
+/* line 8, ../sass/_typo.scss */
+.text-default {
+  color: #959595;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 /* line 1, ../sass/_menu.scss */
 .navbar {
   margin-bottom: 0;
@@ -4658,7 +4672,7 @@ body {
 
 /* line 17, ../sass/_globals.scss */
 .light {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* line 21, ../sass/_globals.scss */
@@ -4669,6 +4683,16 @@ body {
 /* line 25, ../sass/_globals.scss */
 .img-max {
   width: 100%;
+}
+
+/* line 30, ../sass/_globals.scss */
+.spacer-30 {
+  margin-top: 30px;
+}
+
+/* line 30, ../sass/_globals.scss */
+.spacer-70 {
+  margin-top: 70px;
 }
 
 /* line 50, icons/*.png */
@@ -4698,6 +4722,12 @@ body {
   height: 18px;
 }
 
+/* line 15, ../sass/_icons.scss */
+.icons-airplane {
+  width: 23px;
+  height: 23px;
+}
+
 /* line 1, ../sass/_buttons.scss */
 .btn-gray {
   background: #ebebeb;
@@ -4707,9 +4737,27 @@ body {
 .btn-pink {
   background: #d40064;
   color: white;
+  border-radius: 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 11, ../sass/_buttons.scss */
+.btn-pink:hover {
+  color: white;
+  background: #af0052;
 }
 
-/* line 10, ../sass/_buttons.scss */
+/* line 17, ../sass/_buttons.scss */
+.btn-large {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 5px 20px;
+}
+
+/* line 24, ../sass/_buttons.scss */
 .btn-circle {
   background: #d40064;
   font-weight: 700;
@@ -4719,20 +4767,86 @@ body {
   border-radius: 50%;
   padding: 0;
 }
-/* line 19, ../sass/_buttons.scss */
+/* line 33, ../sass/_buttons.scss */
 .btn-circle:hover {
   color: white;
   text-decoration: underline;
 }
 @media (max-width: 768px) {
-  /* line 10, ../sass/_buttons.scss */
+  /* line 24, ../sass/_buttons.scss */
   .btn-circle {
     background: white;
     color: #d40064;
   }
-  /* line 28, ../sass/_buttons.scss */
+  /* line 42, ../sass/_buttons.scss */
   .btn-circle:hover {
     color: #d40064;
     text-decoration: underline;
   }
+}
+
+/* line 3, ../sass/_countdown.scss */
+.pink-gradient {
+  background: #d40064;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d40064), color-stop(100%, #ae0052));
+  background-image: -webkit-linear-gradient(#d40064, #ae0052);
+  background-image: -moz-linear-gradient(#d40064, #ae0052);
+  background-image: -o-linear-gradient(#d40064, #ae0052);
+  background-image: linear-gradient(#d40064, #ae0052);
+  color: white;
+}
+
+/* line 9, ../sass/_countdown.scss */
+.countdown {
+  padding: 10px 30px 25px;
+  display: table;
+  width: 100%;
+  box-shadow: -2px 4px 20px #bcbcbc;
+}
+/* line 15, ../sass/_countdown.scss */
+.countdown h2 {
+  margin: 0 auto 15px;
+  font-size: 25px;
+}
+/* line 20, ../sass/_countdown.scss */
+.countdown .days, .countdown .hours, .countdown .minutes, .countdown .seconds, .countdown .divisor-timer {
+  float: left;
+}
+/* line 24, ../sass/_countdown.scss */
+.countdown .timer {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 30, ../sass/_countdown.scss */
+.countdown .numbers {
+  font-size: 30px;
+  font-weight: 700;
+  color: dimgrey;
+  background: white;
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  display: table;
+}
+/* line 40, ../sass/_countdown.scss */
+.countdown .numbers p {
+  display: table-cell;
+  vertical-align: middle;
+  letter-spacing: 8px;
+  padding-left: 7px;
+}
+/* line 48, ../sass/_countdown.scss */
+.countdown .label {
+  font-size: 12px;
+  margin: 5px 0;
+  font-weight: 700;
+}
+/* line 54, ../sass/_countdown.scss */
+.countdown .divisor-timer {
+  font-size: 60px;
+  font-weight: 700;
+  color: #780e3f;
+  line-height: 40px;
+  padding: 0 10px;
 }

@@ -62,7 +62,6 @@ gulp.task('watch', function(){
 	gulp.watch('src/*.html', ['html']);
 	gulp.watch('src/sass/**/*.scss', ['compass']);
 	gulp.watch('src/js/**/*.js', ['js']);
-	gulp.watch('src/images/**/*.{jpg,png,gif}', ['imagemin']);
 });
 
 // Connect (Livereload)
@@ -82,4 +81,4 @@ gulp.task('connect', function() {
 });
 
 // Default task
-gulp.task('default', ['html', 'js', 'compass', 'imagemin', 'watch', 'connect']);
+gulp.task('default', ['html', 'js', 'compass', 'watch', 'connect']);

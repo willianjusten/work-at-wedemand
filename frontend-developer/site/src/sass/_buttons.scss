@@ -5,6 +5,20 @@
 .btn-pink {
 	background: $pink-light;
 	color: white;
+	border-radius: 0;
+	@include transition(.3s);
+
+	&:hover {
+		color: white;
+		background: $pink-medium;
+	}
+}
+
+.btn-large {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+	padding: 5px 20px;
 }
 
 .btn-circle {

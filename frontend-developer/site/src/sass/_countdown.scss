@@ -1,0 +1,61 @@
+@import "compass/css3/images";
+
+.pink-gradient {
+	background: $pink-light;
+	@include background-image(linear-gradient($pink-light, #ae0052));
+	color: white;
+}
+
+.countdown {
+	padding: 10px 30px 25px;
+	display: table;
+	width: 100%;
+	box-shadow: -2px 4px 20px $gray-medium;
+
+	h2 {
+		margin: 0 auto 15px;
+		font-size: 25px;
+	}
+
+	.days, .hours, .minutes, .seconds, .divisor-timer {
+		float: left;
+	}
+
+	.timer {
+		display: table;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.numbers {
+		font-size: 30px;
+		font-weight: 700;
+		color: $gray-dark;
+		background: white;
+		width: 60px;
+		height: 50px;
+		text-align: center;
+		display: table;
+
+		p {
+			display: table-cell;
+			vertical-align: middle;
+			letter-spacing: 8px;
+			padding-left: 7px;
+		}
+	}
+
+	.label {
+		font-size: 12px;
+		margin: 5px 0;
+		font-weight: 700;
+	}
+
+	.divisor-timer {
+		font-size: 60px;
+		font-weight: 700;
+		color: $pink-dark;
+		line-height: 40px;
+		padding: 0 10px;
+	}
+}

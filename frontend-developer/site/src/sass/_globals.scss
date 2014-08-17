@@ -15,7 +15,7 @@ body {
 }
 
 .light {
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .super {
@@ -24,4 +24,10 @@ body {
 
 .img-max {
 	width: 100%;
+}
+
+@each $i in 3, 7 {
+	.spacer-#{$i*10} {
+		margin-top: 10px * $i;
+	}
 }
