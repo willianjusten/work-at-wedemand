@@ -4573,7 +4573,7 @@ tbody.collapse.in {
 @media (max-width: 768px) {
   /* line 77, ../sass/_menu.scss */
   .search .form-group {
-    margin: 15px auto;
+    margin: 10px auto;
     width: 285px;
   }
 }
@@ -4671,63 +4671,64 @@ tbody.collapse.in {
 /* line 1, ../sass/_globals.scss */
 body {
   font-family: "futura-pt", "Open Sans", "Arial Bold",Gadget,sans-serif;
+  margin-bottom: 200px;
 }
 
 @media (min-width: 1200px) {
-  /* line 6, ../sass/_globals.scss */
+  /* line 7, ../sass/_globals.scss */
   .container {
     width: 970px;
   }
 }
-/* line 11, ../sass/_globals.scss */
+/* line 12, ../sass/_globals.scss */
 .pink {
   color: #d40064;
 }
 
-/* line 15, ../sass/_globals.scss */
+/* line 16, ../sass/_globals.scss */
 .black {
   color: black;
 }
 
-/* line 19, ../sass/_globals.scss */
+/* line 20, ../sass/_globals.scss */
 .bold {
   font-weight: 700;
 }
 
-/* line 23, ../sass/_globals.scss */
+/* line 24, ../sass/_globals.scss */
 .light {
   font-weight: 300;
 }
 
-/* line 27, ../sass/_globals.scss */
+/* line 28, ../sass/_globals.scss */
 .text-top {
   vertical-align: text-top;
   font-size: 10px;
   margin-left: -3px;
 }
 
-/* line 33, ../sass/_globals.scss */
+/* line 34, ../sass/_globals.scss */
 .img-max {
   width: 100%;
 }
 
-/* line 38, ../sass/_globals.scss */
+/* line 39, ../sass/_globals.scss */
 .spacer-30 {
   margin-top: 30px;
 }
 @media (max-width: 992px) {
-  /* line 38, ../sass/_globals.scss */
+  /* line 39, ../sass/_globals.scss */
   .spacer-30 {
     margin-top: 15px;
   }
 }
 
-/* line 38, ../sass/_globals.scss */
+/* line 39, ../sass/_globals.scss */
 .spacer-70 {
   margin-top: 70px;
 }
 @media (max-width: 992px) {
-  /* line 38, ../sass/_globals.scss */
+  /* line 39, ../sass/_globals.scss */
   .spacer-70 {
     margin-top: 35px;
   }
@@ -4859,7 +4860,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   color: dimgrey;
-  background: url(../images/bg-timer.png) no-repeat;
+  background: url(../images/bg-timer.png) center center no-repeat;
   width: 60px;
   height: 50px;
   text-align: center;
@@ -5070,41 +5071,62 @@ body {
   font-size: 24px;
   padding: 11px 15px;
 }
-/* line 8, ../sass/_winners.scss */
+@media (max-width: 768px) {
+  /* line 3, ../sass/_winners.scss */
+  .winners h1 {
+    margin: 20px 0 0;
+  }
+}
+/* line 12, ../sass/_winners.scss */
 .winners .portrait-small, .winners img, .winners .position, .winners .winner {
   float: left;
 }
-/* line 12, ../sass/_winners.scss */
+/* line 16, ../sass/_winners.scss */
 .winners .portrait-small {
   color: white;
   background: #BCBCBC;
 }
-/* line 16, ../sass/_winners.scss */
+/* line 20, ../sass/_winners.scss */
 .winners .portrait-small p {
   font-size: 12px;
   margin: 0 10px;
 }
-/* line 21, ../sass/_winners.scss */
+/* line 25, ../sass/_winners.scss */
 .winners .portrait-small .month {
   margin-top: 5px;
 }
-/* line 26, ../sass/_winners.scss */
+/* line 30, ../sass/_winners.scss */
 .winners .name {
   color: dimgrey;
 }
 
-/* line 31, ../sass/_winners.scss */
+/* line 35, ../sass/_winners.scss */
 .winner {
+  height: 75px;
   margin-left: 25px;
 }
+@media (max-width: 768px) {
+  /* line 35, ../sass/_winners.scss */
+  .winner {
+    margin-left: 15px;
+  }
+}
 
-/* line 35, ../sass/_winners.scss */
+/* line 44, ../sass/_winners.scss */
 .bg-gray-light {
   background: #FAFAFA;
 }
 
-/* line 39, ../sass/_winners.scss */
+/* line 48, ../sass/_winners.scss */
 .bg-gray-medium {
-  padding: 20px 40px;
+  padding: 29px 40px 0;
   background: #F1F1F1;
+}
+@media (max-width: 992px) {
+  /* line 48, ../sass/_winners.scss */
+  .bg-gray-medium {
+    display: table;
+    width: 100%;
+    padding: 20px 30px;
+  }
 }
