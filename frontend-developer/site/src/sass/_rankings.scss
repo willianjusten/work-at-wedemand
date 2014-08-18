@@ -1,23 +1,33 @@
 .gray-gradient {
 	$svg-gradient-shim-threshold: 1;
   	@include background-image(linear-gradient(45deg, #DEDEDE, #F9F9F9 ));
-  	padding: 0 25px;
   	height: 200px;
+
+  	@media(max-width: $screen-md){
+  		height: 65px;
+  		background: #DEDEDE;
+  	}
 }
 
 .rankings {
 	h1 {
 		font-size: 25px;
 		margin: 15px 0;
-	}
 
-	.ranking-call {
-		height: 200px;
+		@media(max-width: $screen-md) {
+			float: left;
+			margin: 20px 0;
+		}
 	}
 
 	.btn {
 		position: absolute;
-		bottom: 25px;
+		bottom: 35px;
+
+		@media(max-width: $screen-md){
+			right: 10px;
+			bottom: 10px;
+		}
 	}
 }
 
@@ -25,7 +35,16 @@
 	box-shadow: inset 0px 1px 20px 0px #E2E2E2;
 	height: 200px;
 	background: #F6F6F6;
-	padding: 25px 40px;
+	padding: 30px;
+
+	@media(max-width: $screen-sm) {
+		display: table;
+		width: 100%;
+	}
+
+	@media(max-width: $screen-xs){
+		padding: 30px 15px;
+	}
 }
 
 .portrait-large, .portrait-medium {
@@ -39,6 +58,7 @@
 .portrait-large {
 	position: relative;
 	color: white;
+	margin: 0 5px 5px 0;
 
 	.ribbon, .points {
 		position: absolute;
@@ -51,5 +71,64 @@
 
 	.points {
 		right: 10px;
+	}
+
+	.caption {
+		background: $pink-light;
+		font-size: 12px;
+		line-height: 25px;
+	}
+}
+
+.portrait-medium, .portrait-you {
+	width: 150px;
+	margin: 0 5px 5px 0;
+	background: #E8E8E8;
+	color: $gray-dark;
+	cursor: pointer;
+	@include transition(.3s);
+	@include transition-timing-function(ease-in-out);
+
+	&:hover {
+		background: white;
+	}
+
+	@media(max-width: $screen-md){
+		width: 138px;
+	}
+
+	.position {
+		float: left;
+		padding: 5px;
+
+		@media(max-width: $screen-md){
+			padding: 5px 0;
+		}
+
+		p {
+			font-size: 14px;
+			margin: 0 10px;
+			line-height: 17px;
+		}
+
+		.text-top {
+			font-size: 10px;
+			margin-left: -3px;
+		}
+	}
+}
+
+.portrait-you {
+	background: $gray-dark;
+	color: white;
+
+	&:hover {
+		color: $gray-dark;
+	}
+}
+
+@media(max-width: $screen-xs) {
+	.portrait-resp {
+		width: 165px;
 	}
 }

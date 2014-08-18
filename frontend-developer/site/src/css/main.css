@@ -4700,8 +4700,8 @@ body {
 }
 
 /* line 27, ../sass/_globals.scss */
-.super {
-  vertical-align: super;
+.text-top {
+  vertical-align: text-top;
 }
 
 /* line 31, ../sass/_globals.scss */
@@ -4790,7 +4790,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
-  padding: 5px 20px;
+  padding: 5px 15px;
 }
 
 /* line 24, ../sass/_buttons.scss */
@@ -4912,57 +4912,159 @@ body {
   background-image: -moz-linear-gradient(45deg, #dedede, #f9f9f9);
   background-image: -o-linear-gradient(45deg, #dedede, #f9f9f9);
   background-image: linear-gradient(45deg, #dedede, #f9f9f9);
-  padding: 0 25px;
   height: 200px;
 }
+@media (max-width: 992px) {
+  /* line 1, ../sass/_rankings.scss */
+  .gray-gradient {
+    height: 65px;
+    background: #DEDEDE;
+  }
+}
 
-/* line 9, ../sass/_rankings.scss */
+/* line 13, ../sass/_rankings.scss */
 .rankings h1 {
   font-size: 25px;
   margin: 15px 0;
 }
-/* line 14, ../sass/_rankings.scss */
-.rankings .ranking-call {
-  height: 200px;
+@media (max-width: 992px) {
+  /* line 13, ../sass/_rankings.scss */
+  .rankings h1 {
+    float: left;
+    margin: 20px 0;
+  }
 }
-/* line 18, ../sass/_rankings.scss */
+/* line 23, ../sass/_rankings.scss */
 .rankings .btn {
   position: absolute;
-  bottom: 25px;
+  bottom: 35px;
+}
+@media (max-width: 992px) {
+  /* line 23, ../sass/_rankings.scss */
+  .rankings .btn {
+    right: 10px;
+    bottom: 10px;
+  }
 }
 
-/* line 24, ../sass/_rankings.scss */
+/* line 34, ../sass/_rankings.scss */
 .box-inset {
   box-shadow: inset 0px 1px 20px 0px #E2E2E2;
   height: 200px;
   background: #F6F6F6;
-  padding: 25px 40px;
+  padding: 30px;
+}
+@media (max-width: 768px) {
+  /* line 34, ../sass/_rankings.scss */
+  .box-inset {
+    display: table;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  /* line 34, ../sass/_rankings.scss */
+  .box-inset {
+    padding: 30px 15px;
+  }
 }
 
-/* line 31, ../sass/_rankings.scss */
+/* line 50, ../sass/_rankings.scss */
 .portrait-large, .portrait-medium {
   float: left;
 }
-/* line 34, ../sass/_rankings.scss */
+/* line 53, ../sass/_rankings.scss */
 .portrait-large img, .portrait-medium img {
   float: left;
 }
 
-/* line 39, ../sass/_rankings.scss */
+/* line 58, ../sass/_rankings.scss */
 .portrait-large {
   position: relative;
   color: white;
+  margin: 0 5px 5px 0;
 }
-/* line 43, ../sass/_rankings.scss */
+/* line 63, ../sass/_rankings.scss */
 .portrait-large .ribbon, .portrait-large .points {
   position: absolute;
 }
-/* line 47, ../sass/_rankings.scss */
+/* line 67, ../sass/_rankings.scss */
 .portrait-large .ribbon {
   left: 0;
   background: #d40064;
 }
-/* line 52, ../sass/_rankings.scss */
+/* line 72, ../sass/_rankings.scss */
 .portrait-large .points {
   right: 10px;
+}
+/* line 76, ../sass/_rankings.scss */
+.portrait-large .caption {
+  background: #d40064;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+/* line 83, ../sass/_rankings.scss */
+.portrait-medium, .portrait-you {
+  width: 150px;
+  margin: 0 5px 5px 0;
+  background: #E8E8E8;
+  color: dimgrey;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 92, ../sass/_rankings.scss */
+.portrait-medium:hover, .portrait-you:hover {
+  background: white;
+}
+@media (max-width: 992px) {
+  /* line 83, ../sass/_rankings.scss */
+  .portrait-medium, .portrait-you {
+    width: 138px;
+  }
+}
+/* line 100, ../sass/_rankings.scss */
+.portrait-medium .position, .portrait-you .position {
+  float: left;
+  padding: 5px;
+}
+@media (max-width: 992px) {
+  /* line 100, ../sass/_rankings.scss */
+  .portrait-medium .position, .portrait-you .position {
+    padding: 5px 0;
+  }
+}
+/* line 108, ../sass/_rankings.scss */
+.portrait-medium .position p, .portrait-you .position p {
+  font-size: 14px;
+  margin: 0 10px;
+  line-height: 17px;
+}
+/* line 114, ../sass/_rankings.scss */
+.portrait-medium .position .text-top, .portrait-you .position .text-top {
+  font-size: 10px;
+  margin-left: -3px;
+}
+
+/* line 121, ../sass/_rankings.scss */
+.portrait-you {
+  background: dimgrey;
+  color: white;
+}
+/* line 125, ../sass/_rankings.scss */
+.portrait-you:hover {
+  color: dimgrey;
+}
+
+@media (max-width: 480px) {
+  /* line 131, ../sass/_rankings.scss */
+  .portrait-resp {
+    width: 165px;
+  }
 }
