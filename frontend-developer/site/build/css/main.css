@@ -4590,7 +4590,7 @@ tbody.collapse.in {
     background: white;
   }
 }
-/* line 103, ../sass/_menu.scss */
+/* line 102, ../sass/_menu.scss */
 .search .input-group .form-control {
   width: 325px;
   height: 39px;
@@ -4611,13 +4611,13 @@ tbody.collapse.in {
   transition-timing-function: ease-in-out;
 }
 @media (max-width: 1200px) and (min-width: 992px) {
-  /* line 103, ../sass/_menu.scss */
+  /* line 102, ../sass/_menu.scss */
   .search .input-group .form-control {
     width: 185px;
   }
 }
 @media (max-width: 768px) {
-  /* line 103, ../sass/_menu.scss */
+  /* line 102, ../sass/_menu.scss */
   .search .input-group .form-control {
     width: 200px;
     border-radius: 0;
@@ -4625,14 +4625,14 @@ tbody.collapse.in {
   }
 }
 
-/* line 129, ../sass/_menu.scss */
+/* line 128, ../sass/_menu.scss */
 .login {
   padding: 0 30px 0 0;
   z-index: 25;
   position: relative;
 }
 @media (max-width: 768px) {
-  /* line 129, ../sass/_menu.scss */
+  /* line 128, ../sass/_menu.scss */
   .login {
     position: absolute;
     top: 0;
@@ -4641,7 +4641,7 @@ tbody.collapse.in {
     margin: 0;
   }
 }
-/* line 142, ../sass/_menu.scss */
+/* line 141, ../sass/_menu.scss */
 .login li {
   padding: 0 5px;
   margin: 0;
@@ -4649,7 +4649,7 @@ tbody.collapse.in {
   line-height: 110px;
 }
 @media (max-width: 768px) {
-  /* line 142, ../sass/_menu.scss */
+  /* line 141, ../sass/_menu.scss */
   .login li {
     padding: 0;
     margin: 0 10px 0 0;
@@ -4657,13 +4657,13 @@ tbody.collapse.in {
     line-height: 54px;
   }
 }
-/* line 156, ../sass/_menu.scss */
+/* line 155, ../sass/_menu.scss */
 .login a {
   font-size: 11px;
   text-transform: uppercase;
   z-index: 25;
 }
-/* line 161, ../sass/_menu.scss */
+/* line 160, ../sass/_menu.scss */
 .login a:hover {
   color: #d40064;
 }
@@ -4871,7 +4871,7 @@ body {
   display: table-cell;
   vertical-align: middle;
   letter-spacing: 8px;
-  padding-left: 5px;
+  padding-left: 9px;
 }
 /* line 44, ../sass/_countdown.scss */
 .countdown .label {
@@ -4897,7 +4897,7 @@ body {
 @media (max-width: 768px) {
   /* line 66, ../sass/_countdown.scss */
   .countdown .numbers {
-    font-size: 18px;
+    font-size: 25px;
     width: 35px;
   }
   /* line 70, ../sass/_countdown.scss */
@@ -4993,20 +4993,25 @@ body {
 /* line 67, ../sass/_rankings.scss */
 .portrait-large .ribbon {
   left: 0;
-  background: #d40064;
-}
-/* line 72, ../sass/_rankings.scss */
-.portrait-large .points {
-  right: 10px;
+  background: url(../images/ribbon.png) no-repeat;
+  width: 41px;
+  height: 41px;
+  font-size: 14px;
+  padding: 4px;
 }
 /* line 76, ../sass/_rankings.scss */
+.portrait-large .points {
+  right: 10px;
+  top: 5px;
+}
+/* line 81, ../sass/_rankings.scss */
 .portrait-large .caption {
   background: #d40064;
   font-size: 12px;
   line-height: 25px;
 }
 
-/* line 83, ../sass/_rankings.scss */
+/* line 88, ../sass/_rankings.scss */
 .portrait-medium, .portrait-you {
   width: 150px;
   margin: 0 5px 5px 0;
@@ -5022,46 +5027,46 @@ body {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 92, ../sass/_rankings.scss */
+/* line 97, ../sass/_rankings.scss */
 .portrait-medium:hover, .portrait-you:hover {
   background: white;
 }
 @media (max-width: 992px) {
-  /* line 83, ../sass/_rankings.scss */
+  /* line 88, ../sass/_rankings.scss */
   .portrait-medium, .portrait-you {
     width: 138px;
   }
 }
-/* line 100, ../sass/_rankings.scss */
+/* line 105, ../sass/_rankings.scss */
 .portrait-medium .position, .portrait-you .position {
   float: left;
   padding: 5px;
 }
 @media (max-width: 992px) {
-  /* line 100, ../sass/_rankings.scss */
+  /* line 105, ../sass/_rankings.scss */
   .portrait-medium .position, .portrait-you .position {
     padding: 5px 0;
   }
 }
-/* line 108, ../sass/_rankings.scss */
+/* line 113, ../sass/_rankings.scss */
 .portrait-medium .position p, .portrait-you .position p {
   font-size: 14px;
   margin: 0 10px;
   line-height: 17px;
 }
 
-/* line 116, ../sass/_rankings.scss */
+/* line 121, ../sass/_rankings.scss */
 .portrait-you {
   background: dimgrey;
   color: white;
 }
-/* line 120, ../sass/_rankings.scss */
+/* line 125, ../sass/_rankings.scss */
 .portrait-you:hover {
   color: dimgrey;
 }
 
 @media (max-width: 480px) {
-  /* line 126, ../sass/_rankings.scss */
+  /* line 131, ../sass/_rankings.scss */
   .portrait-resp {
     width: 165px;
   }
