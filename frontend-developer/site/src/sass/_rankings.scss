@@ -66,11 +66,16 @@
 
 	.ribbon {
 		left: 0;
-		background: $pink-light;
+		background: url(../images/ribbon.png) no-repeat;
+		width: 41px;
+		height: 41px;
+		font-size: 14px;
+		padding: 4px;
 	}
 
 	.points {
 		right: 10px;
+		top: 5px;
 	}
 
 	.caption {
