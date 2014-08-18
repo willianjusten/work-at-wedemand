@@ -62,6 +62,7 @@ gulp.task('watch', function(){
 	gulp.watch('src/*.html', ['html']);
 	gulp.watch('src/sass/**/*.scss', ['compass']);
 	gulp.watch('src/js/**/*.js', ['js']);
+	gulp.watch('src/images/**/*.{png, jpg, gif}', ['imagemin']);
 });
 
 // Connect (Livereload)

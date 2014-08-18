@@ -4702,30 +4702,32 @@ body {
 /* line 27, ../sass/_globals.scss */
 .text-top {
   vertical-align: text-top;
+  font-size: 10px;
+  margin-left: -3px;
 }
 
-/* line 31, ../sass/_globals.scss */
+/* line 33, ../sass/_globals.scss */
 .img-max {
   width: 100%;
 }
 
-/* line 36, ../sass/_globals.scss */
+/* line 38, ../sass/_globals.scss */
 .spacer-30 {
   margin-top: 30px;
 }
 @media (max-width: 992px) {
-  /* line 36, ../sass/_globals.scss */
+  /* line 38, ../sass/_globals.scss */
   .spacer-30 {
     margin-top: 15px;
   }
 }
 
-/* line 36, ../sass/_globals.scss */
+/* line 38, ../sass/_globals.scss */
 .spacer-70 {
   margin-top: 70px;
 }
 @media (max-width: 992px) {
-  /* line 36, ../sass/_globals.scss */
+  /* line 38, ../sass/_globals.scss */
   .spacer-70 {
     margin-top: 35px;
   }
@@ -4857,7 +4859,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   color: dimgrey;
-  background: white;
+  background: url(../images/bg-timer.png) no-repeat;
   width: 60px;
   height: 50px;
   text-align: center;
@@ -4868,7 +4870,7 @@ body {
   display: table-cell;
   vertical-align: middle;
   letter-spacing: 8px;
-  padding-left: 7px;
+  padding-left: 5px;
 }
 /* line 44, ../sass/_countdown.scss */
 .countdown .label {
@@ -5046,25 +5048,63 @@ body {
   margin: 0 10px;
   line-height: 17px;
 }
-/* line 114, ../sass/_rankings.scss */
-.portrait-medium .position .text-top, .portrait-you .position .text-top {
-  font-size: 10px;
-  margin-left: -3px;
-}
 
-/* line 121, ../sass/_rankings.scss */
+/* line 116, ../sass/_rankings.scss */
 .portrait-you {
   background: dimgrey;
   color: white;
 }
-/* line 125, ../sass/_rankings.scss */
+/* line 120, ../sass/_rankings.scss */
 .portrait-you:hover {
   color: dimgrey;
 }
 
 @media (max-width: 480px) {
-  /* line 131, ../sass/_rankings.scss */
+  /* line 126, ../sass/_rankings.scss */
   .portrait-resp {
     width: 165px;
   }
+}
+/* line 3, ../sass/_winners.scss */
+.winners h1 {
+  font-size: 24px;
+  padding: 11px 15px;
+}
+/* line 8, ../sass/_winners.scss */
+.winners .portrait-small, .winners img, .winners .position, .winners .winner {
+  float: left;
+}
+/* line 12, ../sass/_winners.scss */
+.winners .portrait-small {
+  color: white;
+  background: #BCBCBC;
+}
+/* line 16, ../sass/_winners.scss */
+.winners .portrait-small p {
+  font-size: 12px;
+  margin: 0 10px;
+}
+/* line 21, ../sass/_winners.scss */
+.winners .portrait-small .month {
+  margin-top: 5px;
+}
+/* line 26, ../sass/_winners.scss */
+.winners .name {
+  color: dimgrey;
+}
+
+/* line 31, ../sass/_winners.scss */
+.winner {
+  margin-left: 25px;
+}
+
+/* line 35, ../sass/_winners.scss */
+.bg-gray-light {
+  background: #FAFAFA;
+}
+
+/* line 39, ../sass/_winners.scss */
+.bg-gray-medium {
+  padding: 20px 40px;
+  background: #F1F1F1;
 }

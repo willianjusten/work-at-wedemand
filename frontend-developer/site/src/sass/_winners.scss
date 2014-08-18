@@ -1,0 +1,42 @@
+.winners {
+
+	h1 {
+		font-size: 24px;
+		padding: 11px 15px;
+	}
+
+	.portrait-small, img, .position, .winner {
+		float: left;
+	}
+
+	.portrait-small {
+		color: white;
+		background: #BCBCBC;
+
+		p {
+			font-size: 12px;
+			margin: 0 10px;
+		}
+
+		.month {
+			margin-top: 5px;
+		}
+	}
+
+	.name {
+		color: $gray-dark;
+	}
+}
+
+.winner {
+	margin-left: 25px;
+}
+
+.bg-gray-light {
+	background: #FAFAFA;
+}
+
+.bg-gray-medium {
+	padding: 20px 40px;
+	background: #F1F1F1;
+}
